@@ -1,0 +1,1823 @@
+#include<stdio.h>
+//***************************************************
+void
+thalapakatti ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*******************************************************************************************************************
+void
+dharbar ()
+{
+  int dhar;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &dhar);
+  if (dhar == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order2, gst2, tot2, total2 = 0, q2, totalQuantity2 = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order2);
+		  if (order2 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q2);
+		  totalQuantity2 += q2;
+		  switch (order2)
+			{
+			case 1:
+			  total2 += 100 * q2;
+			  break;
+			case 2:
+			  total2 += 200 * q2;
+			  break;
+			case 3:
+			  total2 += 150 * q2;
+			  break;
+			case 4:
+			  total2 += 100 * q2;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order2 != 0);
+	  gst2 = (total2 * 18) / 100;
+	  tot2 = gst2 + total2;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity2);
+	  printf ("Total amount you need to pay is: b9%d\n", total2);
+	  printf ("GST for your order is: b9%d\n", gst2);
+	  printf ("Over all total amount with GST is: b9%d\n", tot2);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (dhar == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order3, gst3, tot3, total3, totalQuantity3 = 0, q3;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order3);
+		  if (order3 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q3);
+		  totalQuantity3 += q3;	// Adding to total quantity
+		  switch (order3)
+			{
+			case 1:
+			  total3 += 100 * q3;
+			  break;
+			case 2:
+			  total3 += 200 * q3;
+			  break;
+			case 3:
+			  total3 += 150 * q3;
+			  break;
+			case 4:
+			  total3 += 100 * q3;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order3 != 0);
+	  gst3 = (total3 * 8) / 100;
+	  tot3 = gst3 + total3;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity3);
+	  printf ("Total amount for your order is: b9%d\n", total3);
+	  printf ("GST for your order is: b9%d\n", gst3);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot3);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+
+}
+
+//*******************************************************************************************************************
+void
+kongumess ()
+{
+  int kongu;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &kongu);
+  if (kongu == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order4, gst4, tot4, total4 = 0, q4, totalQuantity4 = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order4);
+		  if (order4 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q4);
+		  totalQuantity4 += q4;
+		  switch (order4)
+			{
+			case 1:
+			  total4 += 100 * q4;
+			  break;
+			case 2:
+			  total4 += 200 * q4;
+			  break;
+			case 3:
+			  total4 += 150 * q4;
+			  break;
+			case 4:
+			  total4 += 100 * q4;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order4 != 0);
+	  gst4 = (total4 * 18) / 100;
+	  tot4 = gst4 + total4;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity4);
+	  printf ("Total amount you need to pay is: b9%d\n", total4);
+	  printf ("GST for your order is: b9%d\n", gst4);
+	  printf ("Over all total amount with GST is: b9%d\n", tot4);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (kongu == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order5, gst5, tot5, total5, totalQuantity5, q5;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order5);
+		  if (order5 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q5);
+		  totalQuantity5 += q5;
+		  switch (order5)
+			{
+			case 1:
+			  total5 += 100 * q5;
+			  break;
+			case 2:
+			  total5 += 200 * q5;
+			  break;
+			case 3:
+			  total5 += 150 * q5;
+			  break;
+			case 4:
+			  total5 += 100 * q5;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order5 != 0);
+	  gst5 = (total5 * 8) / 100;
+	  tot5 = gst5 + total5;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity5);
+	  printf ("Total amount for your order is: b9%d\n", total5);
+	  printf ("GST for your order is: b9%d\n", gst5);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot5);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*******************************************************************************************************************
+void
+kokrakkko ()
+{
+  int kokr;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &kokr);
+  if (kokr == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order6, gst6, tot6, total6 = 0, q6, totalQuantity6 = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order6);
+		  if (order6 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q6);
+		  totalQuantity6 += q6;
+		  switch (order6)
+			{
+			case 1:
+			  total6 += 100 * q6;
+			  break;
+			case 2:
+			  total6 += 200 * q6;
+			  break;
+			case 3:
+			  total6 += 150 * q6;
+			  break;
+			case 4:
+			  total6 += 100 * q6;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order6 != 0);
+	  gst6 = (total6 * 18) / 100;
+	  tot6 = gst6 + total6;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity6);
+	  printf ("Total amount you need to pay is: b9%d\n", total6);
+	  printf ("GST for your order is: b9%d\n", gst6);
+	  printf ("Over all total amount with GST is: b9%d\n", tot6);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (kokr == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order7, gst7, tot7, total7, totalQuantity7 = 0, q7;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order7);
+		  if (order7 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q7);
+		  totalQuantity7 += q7;
+		  switch (order7)
+			{
+			case 1:
+			  total7 += 100 * q7;
+			  break;
+			case 2:
+			  total7 += 200 * q7;
+			  break;
+			case 3:
+			  total7 += 150 * q7;
+			  break;
+			case 4:
+			  total7 += 100 * q7;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order7 != 0);
+	  gst7 = (total7 * 8) / 100;
+	  tot7 = gst7 + total7;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity7);
+	  printf ("Total amount for your order is: b9%d\n", total7);
+	  printf ("GST for your order is: b9%d\n", gst7);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot7);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************namakkal*********************************************************************
+void
+Nalahotels ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************namakkal******************************************************************
+void
+Shanthiinngrand ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************namakkal******************************************************************
+void
+Sanuinternational ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************namakkal******************************************************************
+void
+chailapaa ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************thirchy*******************************************************************
+void
+SRMHotel ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//******************************************thirchy******************************************************************
+void
+RedFoxHotel ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************thirchy*******************************************************************
+void
+HotelBlossoms ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************thirchy*******************************************************************
+void
+HotelOxinaLygon ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************theni*********************************************************************
+void
+WesternGatz ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************theni*********************************************************************
+void
+SivasRegency ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************theni*********************************************************************
+void
+GreenRoyale ()
+{
+  int thala;
+  printf ("YOU CHOSE THALAPAKATTI\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*****************************************theni*********************************************************************
+void
+HotelRamyas ()
+{
+  int thala;
+  printf ("YOU CHOOSED HOTEL RAMYAS\n");
+  printf ("1-VEG\n2-NON VEG\n");
+  printf ("ENTER THE CHOICE: ");
+  scanf ("%d", &thala);
+  if (thala == 1)
+	{
+	  printf
+		("VEG MENUS ARE : \n 1-MUSHROOM BIRYANI\n 2-GOBI MANJUERIAN\n 3-FULL MEALS\n 4-VERITY RICE\n");
+	  int order, gst, tot, total = 0, q, totalQuantity = 0;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order);
+		  if (order == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q);
+		  totalQuantity += q;
+		  switch (order)
+			{
+			case 1:
+			  total += 100 * q;
+			  break;
+			case 2:
+			  total += 200 * q;
+			  break;
+			case 3:
+			  total += 150 * q;
+			  break;
+			case 4:
+			  total += 100 * q;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order != 0);
+	  gst = (total * 18) / 100;
+	  tot = gst + total;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity);
+	  printf ("Total amount you need to pay is: b9%d\n", total);
+	  printf ("GST for your order is: b9%d\n", gst);
+	  printf ("Over all total amount with GST is: b9%d\n", tot);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else if (thala == 2)
+	{
+	  printf
+		("NON VEG MENUS ARE : \n 1-MUTTON BIRYANI\n 2-CHIKAN BIRYANI\n 3-FISH BIRYANI\n 4-CHIKAN 65\n");
+	  //printf("ENTER YOUR DISH :");
+	  int order1, gst1, tot1, total1, totalQuantity1 = 0, q1;
+	  do
+		{
+		  printf ("Enter the dish you want or else enter--0 : ");
+		  scanf ("%d", &order1);
+		  if (order1 == 0)
+			{
+			  break;
+			}
+		  printf ("Please enter the quantity: ");
+		  scanf ("%d", &q1);
+		  totalQuantity1 += q1;
+		  switch (order1)
+			{
+			case 1:
+			  total1 += 100 * q1;
+			  break;
+			case 2:
+			  total1 += 200 * q1;
+			  break;
+			case 3:
+			  total1 += 150 * q1;
+			  break;
+			case 4:
+			  total1 += 100 * q1;
+			  break;
+			default:
+			  printf ("Invalid item number!\n");
+			}
+		}
+	  while (order1 != 0);
+	  gst1 = (total1 * 8) / 100;
+	  tot1 = gst1 + total1;
+	  printf ("--------------------------------------------------------\n");
+	  printf ("Total quantaity:  %d\n", totalQuantity1);
+	  printf ("Total amount for your order is: b9%d\n", total1);
+	  printf ("GST for your order is: b9%d\n", gst1);
+	  printf ("Total amount for your order with GST is: b9%d\n", tot1);
+	  printf ("--------------------------------------------------------\n");
+	}
+  else
+	{
+	  printf ("Invalid choice!\n");
+	}
+}
+
+//*******************************************************************************************************************
+//*****************************************karur*********************************************************************
+void
+fun1 ()
+{
+  printf ("\n***** your choice is karur ***** ");
+  printf
+	("\n 1-THALAPAKATTI\n 2-DHARBAR\n 3-KONGUMESS\n 4-KOKKARAKKO BRIYANI\n");
+  printf ("ENTER YOUR HOTEL : ");
+  int ho;
+  scanf ("%d", &ho);
+  switch (ho)
+	{
+	case 1:
+	  thalapakatti ();
+	  break;
+	case 2:
+	  dharbar ();
+	  break;
+	case 3:
+	  kongumess ();
+	  break;
+	case 4:
+	  kokrakkko ();
+	  break;
+	default:
+	  printf ("Invalid item number!\n");
+	  break;
+
+	}
+}
+
+//**************************************namakkal*********************************************************************
+void
+fun2 ()
+{
+  printf ("\n***** your choice is namakkal ***** ");
+  printf
+	("\n 1-NALAHOTELS\n 2-SHANTHIINNGRAND\n 3-SANUINTERNATIONAL\n 4-CHAILAPAA\n");
+  printf ("ENTER YOUR HOTEL : ");
+  int ho1;
+  scanf ("%d", &ho1);
+  switch (ho1)
+	{
+	case 1:
+	  Nalahotels ();
+	  break;
+	case 2:
+	  Shanthiinngrand ();
+	  break;
+	case 3:
+	  Sanuinternational ();
+	  break;
+	case 4:
+	  chailapaa ();
+	  break;
+	default:
+	  printf ("Invalid item number!\n");
+	  break;
+
+	}
+}
+
+//**************************************trichy*****************************************
+void
+fun3 ()
+{
+  printf ("\n***** your choice is trichy ***** ");
+  printf
+	("\n 1-SRMHotel\n 2-Red Fox Hotel\n 3-Hotel Blossoms\n 4-Hotel Oxina Lygon\n");
+  printf ("ENTER YOUR HOTEL : ");
+  int ho1;
+  scanf ("%d", &ho1);
+  switch (ho1)
+	{
+	case 1:
+	  SRMHotel ();
+	  break;
+	case 2:
+	  RedFoxHotel ();
+	  break;
+	case 3:
+	  HotelBlossoms ();
+	  break;
+	case 4:
+	  HotelOxinaLygon ();
+	  break;
+	default:
+	  printf ("Invalid item number!\n");
+	  break;
+
+	}
+}
+
+//****************************************thani****************************************
+void
+fun4 ()
+{
+  printf ("\n***** your choice is theni ***** ");
+  printf
+	("\n 1-Hotel Western Gatz\n 2-Hotel Sivas Regency\n 3-Green Royale Resorts\n 4-Hotel Ramyas\n");
+  printf ("ENTER YOUR HOTEL : ");
+  int ho1;
+  scanf ("%d", &ho1);
+  switch (ho1)
+	{
+	case 1:
+	  WesternGatz ();
+	  break;
+	case 2:
+	  SivasRegency ();
+	  break;
+	case 3:
+	  GreenRoyale ();
+	  break;
+	case 4:
+	  HotelRamyas ();
+	  break;
+	default:
+	  printf ("Invalid item number!\n");
+	  break;
+
+	}
+}
+
+//*************************************************************************************
+
+int
+main ()
+{
+  printf ("*********************************************************\n");
+  printf ("*************** HOTEL MANAGEMENT SYSTEM *****************\n");
+  printf ("*********************************************************\n");
+  printf ("Restaurant Location\n");
+  printf ("*****************\n");
+  printf ("1-KARUR\n2-NAMMAKAL\n3-TRICHY\n4-THENI\n");
+  printf ("ENTER YOUR LOCATION : ");
+  int lo;
+  scanf ("%d", &lo);
+  switch (lo)
+	{
+	case 1:
+	  fun1 ();
+	  break;
+	case 2:
+	  fun2 ();
+	  break;
+	case 3:
+	  fun3 ();
+	  break;
+	case 4:
+	  fun4 ();
+	  break;
+	default:
+	  printf ("Invalid item number!\n");
+	}
+}
