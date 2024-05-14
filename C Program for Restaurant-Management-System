@@ -1795,7 +1795,7 @@ int
 main ()
 {
   printf ("*********************************************************\n");
-  printf ("*************** HOTEL MANAGEMENT SYSTEM *****************\n");
+  printf ("*************** RESTAURANT MANAGEMENT SYSTEM *****************\n");
   printf ("*********************************************************\n");
   printf ("Restaurant Location\n");
   printf ("*****************\n");
